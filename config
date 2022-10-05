@@ -285,9 +285,8 @@ bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
 bindsym $mod+w exec firefox
-#bindsym $mod+n exec /usr/bin/thunar
-bindsym $mod+k exec /usr/bin/keepassxc
-bindsym $mod+m exec /usr/bin/thunderbird
+bindsym $mod+k exec keepassxc
+bindsym $mod+m exec thunderbird
 #bindsym $mod+ü exec /usr/bin/vifm
 
 bindsym Print exec "scrot ~/%Y-%m-%d-%T-screenshot.png"
