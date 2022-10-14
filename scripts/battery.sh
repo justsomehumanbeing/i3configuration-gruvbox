@@ -49,9 +49,9 @@ if ($bat_state !~ /:               (\w+)/) {
 $status = $1;
 
 if ($status eq 'discharging') {
-	$full_text .= ' ';
+	$full_text .= 'discharging';
 } elsif ($status eq 'charging') {
-	$full_text .= ' ';
+	$full_text .= 'charging';
 } elsif ($status eq 'Unknown') {
 	open (AC_ADAPTER, "acpi -a |") or die;
 	$ac_adapt = <AC_ADAPTER>;
