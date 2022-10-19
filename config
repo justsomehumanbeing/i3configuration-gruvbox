@@ -526,15 +526,15 @@ bindsym $mod+b move workspace to output left
 
 #This command is written for alacritty,
 #maybe flags differ for other terminals
-#set $run-one ~/.scripts/run-one.sh
+set $run-one ~/.scripts/run-one.sh run-one
 #Arithmetik Terminal
 for_window [title="math"] floating enable
 for_window [title="math"] resize set 1500 900
 for_window [title="math"] move scratchpad
 for_window [title="math"] border pixel 6
-exec --no-startup-id $term --hold --title math --option font.size=16 --command ipython --no-banner
 
-bindsym $mod+y [title="math"] scratchpad show; [title="math"] move position center
+
+bindsym $mod+y exec --no-startup-id $run-one $term --hold --title math --option font.size=16 --command ipython --no-banner;[title="math"] scratchpad show; [title="math"] move position center
 
 #keepass
 for_window [class="KeePassXC"] floating enable
