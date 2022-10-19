@@ -302,7 +302,6 @@ assign [class="Thunar"] $ws3
 assign [class="KeePassXC"] $ws1
 #Email:
 assign [class="thunderbird"] $ws4
-assign [class="TelegramDesktop"] $ws5
 #Media:
 assign [class="FreeTube"] $ws10
 
@@ -312,7 +311,6 @@ for_window [class=Xfce4-terminal] focus
 for_window [class=(?i)firefox] focus
 for_window [class=Thunar] focus
 for_window [class=Thunderbird] focus
-for_window [class=TelegramDesktop] focus
 
 #############################################
 # autostart applications/services on login: #
