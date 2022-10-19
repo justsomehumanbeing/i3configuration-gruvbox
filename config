@@ -32,7 +32,7 @@ font pango:Noto Sans Regular 10
 
 # set the mod key to the ctrl-key:
 set $mod mod4
-
+set $term alacritty
 
 #####################
 # workspace layout: #
@@ -172,7 +172,7 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 ######################################
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec $term 
 #bindsym $mod+Return exec /home/nutzer/.config/i3/correctpwd.sh
 
 # kill focused window
@@ -517,3 +517,21 @@ bindsym F10 exec rofi -show window \
 
 #Moving workspaces between screens
 bindsym $mod+b move workspace to output left
+
+
+
+#####################################
+# 			SCRATCHPADS				#
+#####################################
+
+#This command is written for alacritty,
+#maybe flags differ for other terminals
+set $run-one ~/.scripts/run-one.sh
+#Arithmetik Terminal
+for_window [title="math"] floating enable
+for_window [title="math"] resize set 600 500
+for_window [title="math"] move scratchpad
+for_window [title="math"] border pixel 4
+exec --no-startup-id $term --hold --title math --option font.size=15 --command ipython
+
+bindsym $mod+y [title="math"] scratchpad show; [title="math"] move position center
