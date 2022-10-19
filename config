@@ -466,8 +466,7 @@ bindsym $mod+b move workspace to output left
 # 			SCRATCHPADS				#
 #####################################
 
-#This command is written for alacritty,
-#maybe flags differ for other terminals
+#Reopen closed scratchpads but have them run only once
 set $run-one ~/.scripts/run-one.sh run-one
 #Arithmetik Terminal
 for_window [title="math"] floating enable
@@ -476,7 +475,10 @@ for_window [title="math"] move scratchpad
 for_window [title="math"] border pixel 6
 
 
-bindsym $mod+y exec --no-startup-id $run-one $term --hold --title math --option font.size=16 --command ipython --no-banner;[title="math"] scratchpad show; [title="math"] move position center
+#This command is written for alacritty,
+#maybe flags differ for other terminals
+bindsym $mod+y exec --no-startup-id $run-one $term --hold --title math --option font.size=16 --command ipython --no-banner;\
+[title="math"] scratchpad show; [title="math"] move position center
 
 #keepass
 for_window [class="KeePassXC"] floating enable
