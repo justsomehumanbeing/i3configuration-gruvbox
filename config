@@ -209,21 +209,21 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+g layout tabbed
+#bindsym $mod+s layout stacking
+bindsym $mod+g layout tabbed 
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+#bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # open new empty workspace
-bindsym $mod+Shift+n exec ~/.config/i3/scripts/empty_workspace.sh
+#bindsym $mod+Shift+n exec ~/.config/i3/scripts/empty_workspace.sh
 
 ## Multimedia Keys
 
