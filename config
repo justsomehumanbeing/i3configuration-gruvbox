@@ -424,16 +424,16 @@ bar {
 strip_workspace_numbers yes
 ##strip_workspace_name no
 
-		    colors {
-		    separator          $purple
-		    background         $darkgrey
-		    statusline         $white
-#                          		border 		        bg		txt		indicator
-		focused_workspace	$green		  	$grey		$darkgrey	$purple
-		active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
-		inactive_workspace	$darkgrey   		$darkgrey	$grey		$purple
-		urgent_workspace	$urgentred	    	$urgentred	$white		$purple 
-	}
+colors
+{
+	separator          	$purple
+	background         	$darkgrey
+	statusline         	$white
+	#                   border 		        bg			txt			indicator
+	focused_workspace	$green		  		$grey		$darkgrey	$purple
+	active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
+	inactive_workspace	$darkgrey   		$darkgrey	$grey		$purple
+	urgent_workspace	$urgentred	    	$urgentred	$white		$purple 
 }
 
 #####################################
