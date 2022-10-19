@@ -532,7 +532,7 @@ for_window [title="math"] floating enable
 for_window [title="math"] resize set 1500 900
 for_window [title="math"] move scratchpad
 for_window [title="math"] border pixel 6
-exec --no-startup-id $term --hold --title math --option font.size=16 --command ipython
+exec --no-startup-id $term --hold --title math --option font.size=16 --command ipython --no-banner
 
 bindsym $mod+y [title="math"] scratchpad show; [title="math"] move position center
 
