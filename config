@@ -527,7 +527,7 @@ bindsym $mod+b move workspace to output left
 
 #This command is written for alacritty,
 #maybe flags differ for other terminals
-set $run-one ~/.scripts/run-one.sh
+#set $run-one ~/.scripts/run-one.sh
 #Arithmetik Terminal
 for_window [title="math"] floating enable
 for_window [title="math"] resize set 1500 900
