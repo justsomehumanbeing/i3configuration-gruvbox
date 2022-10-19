@@ -310,7 +310,7 @@ assign [class="FreeTube"] $ws10
 for_window [class=Xfce4-terminal] focus
 for_window [class=(?i)firefox] focus
 for_window [class=Thunar] focus
-for_window [class=Thunderbird] focus
+for_window [class=thunderbird] focus
 
 #############################################
 # autostart applications/services on login: #
