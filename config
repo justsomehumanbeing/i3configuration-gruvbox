@@ -1,4 +1,3 @@
-
 # exec --no-startup-id ~/set_once.sh
 
 ############# STARTUP ##################
@@ -54,7 +53,7 @@ workspace_layout default
 ##############################
 
 #border indicator on windows: 
-new_window pixel 2
+new_window pixel 4
 
 # thin borders
 # hide_edge_borders both
@@ -532,7 +531,7 @@ bindsym $mod+b move workspace to output left
 for_window [title="math"] floating enable
 for_window [title="math"] resize set 1500 900
 for_window [title="math"] move scratchpad
-for_window [title="math"] border pixel 4
+for_window [title="math"] border pixel 6
 exec --no-startup-id $term --hold --title math --option font.size=16 --command ipython
 
 bindsym $mod+y [title="math"] scratchpad show; [title="math"] move position center
