@@ -2,23 +2,6 @@
 
 ############# STARTUP ##################
 
-
-# This file is a modified version based on default i3-config-wizard config
-# source is available here:
-# https://raw.githubusercontent.com/endeavouros-team/endeavouros-i3wm-setup/master/.config/i3/config
-# Maintainer: joekamprad [joekamprad@endeavouros.com] 
-# https://endeavouros.com
-#
-# iconic font icon search: https://fontawesome.com/v4.7/cheatsheet/
-#
-# --> to update this run the following command (will backup existing setup file)
-# wget --backups=1 https://raw.githubusercontent.com/endeavouros-team/endeavouros-i3wm-setup/main/.config/i3/config -P ~/.config/i3/
-#
-# Endeavouros-i3 config file
-# Source for complete framework of our i3 config and theming here: https://github.com/endeavouros-team/endeavouros-i3wm-setup
-# EndeavourOS wiki holds some Information also: https://discovery.endeavouros.com/window-tiling-managers/i3-wm/
-# Please see http://i3wm.org/docs/userguide.html for the official i3 reference!
-
 #######################
 # config starts here: #
 #######################
@@ -39,13 +22,6 @@ set $term alacritty
 
 # default i3 tiling mode:
 workspace_layout default
-
-# i3 stacking layout:
-# Each window will be fullscreen and tabbed top to bottom.
-#workspace_layout stacking
-
-# i3 tabbed layout:
-# Each new window will open fullscreen as a tab (left to right)
 #workspace_layout tabbed
 
 ##############################
@@ -286,7 +262,6 @@ bindsym $mod+p exec /usr/local/bin/switch-audio-port
 bindsym $mod+w exec firefox
 #bindsym $mod+k exec keepassxc
 bindsym $mod+m exec thunderbird
-#bindsym $mod+ü exec /usr/bin/vifm
 
 bindsym Print exec "scrot ~/%Y-%m-%d-%T-screenshot.png"
 
@@ -463,37 +438,6 @@ strip_workspace_numbers yes
 	}
 }
 
-# you can add different bars for multidisplay setups on each display:
-# set output HDMI-0 to the display you want the bar, --transparency can be set.
-# Transparency needs rgba color codes to be used where the last two letters are the transparency factor see here:
-# https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4
-# #08052be6 --> e6=90%
-
-# bar {	
-#	font pango:Noto Sans Regular 9, FontAwesome 9
-#	status_command i3blocks -c ~/.config/i3/i3blocks-2.conf
-#	i3bar_command i3bar --transparency
-#	output HDMI-0
-#	position bottom
-#
-# When strip_workspace_numbers is set to yes, 
-# any workspace that has a name of the form 
-# “[n][:][NAME]” will display only the name.
-#strip_workspace_numbers yes
-##strip_workspace_name no
-#
-#	colors {
-#		separator          $purple
-#		background         $darkbluetrans
-#        	statusline         $white
-#					border		bg		txt		indicator
-#		focused_workspace	$lighterblue	$lighterblue	$darkblue	$purple
-#		active_workspace	$lightdblue	$lightdblue	$darkblue	$purple
-#		inactive_workspace	$darkblue	$darkblue	$lightdblue	$purple
-#		urgent_workspace	$urgentred	$urgentred	$white		$purple 
-#	}
-#}
-
 #####################################
 # Application menu handled by rofi: #
 #####################################
@@ -502,10 +446,10 @@ strip_workspace_numbers yes
 
 bindsym $mod+d exec rofi -modi drun -show drun \
 		-config ~/.config/rofi/rofidmenu.rasi
-                
+
 ## bindsym F9 exec rofi -modi drun -show drun \
 ##		-config ~/.config/rofi/rofidmenu.rasi
-		
+
 ## rofi bindings for window menu (two bindings F10/$mod+t)
 
 bindsym $mod+t exec rofi -show window \
