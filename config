@@ -301,7 +301,7 @@ assign [class="Chromium"] $ws2
 #Filemanagers:
 assign [class="Thunar"] $ws3
 #passwordmanager:
-assign [class="KeePassXC"] $ws1
+#assign [class="KeePassXC"] $ws1
 #Email:
 assign [class="thunderbird"] $ws4
 #Media:
