@@ -491,3 +491,15 @@ for_window [class="KeePassXC"] move scratchpad
 for_window [class="KeePassXC"] border pixel 6
 
 bindsym $mod+k exec --no-startup-id $run-one keepassxc; [class="KeePassXC"] scratchpad show; [class="KeePassXC"] move position center
+
+#alsamixer:
+for_window [title="alsamixer"] floating enable
+for_window [title="alsamixer"] resize set 1500 900
+for_window [title="alsamixer"] move scratchpad
+for_window [title="alsamixer"] border pixel 6
+
+
+#This command is written for alacritty,
+#maybe flags differ for other terminals
+bindsym $mod+j exec --no-startup-id $run-one $term --hold --title alsamixer --command alsamixer;\
+[title="alsamixer"] scratchpad show; [title="alsamixer"] move position center
