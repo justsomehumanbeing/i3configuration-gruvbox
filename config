@@ -1,10 +1,12 @@
 # exec --no-startup-id ~/set_once.sh
-
-############# STARTUP ##################
-
 #######################
 # config starts here: #
 #######################
+
+############# STARTUP ##################
+
+#Make the Laptop lock the screen automatically (e.g. if lid is closed)
+exec --no-startup-id xss-lock -- i3lock -i  --ignore-empty-password --show-failed-attempts  ~/.config/i3/lock2.png -p default -t
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
