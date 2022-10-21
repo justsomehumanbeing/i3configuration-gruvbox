@@ -433,11 +433,11 @@ set $faded_aqua		#427b58
 set $faded_orange	#af3a03
 
 # define colors for windows:
-#class		        		border			bground		text		indicator		child_border
-client.focused		    	$isipink		$darkblue 	$white		$isipink		$isipink
-client.unfocused	    	$darkblue		$darkblue	$grey		$purple			$darkgrey
-client.focused_inactive		$darkblue		$darkblue	$grey		$purple			$black
-client.urgent		    	$urgentred		$urgentred	$white		$purple			$yellowbrown
+#class		        		border			bground		text			indicator		child_border
+client.focused		    	$isipink		$dark0		$light0 		$isipink		$isipink
+client.unfocused	    	$dark0			$dark0		$light4			$dark0			$dark0
+client.focused_inactive		$dark0			$dark0		$light4			$purple			$dark0
+client.urgent		    	$bright_red		$bright_red	$light0			$bright_red		$bright_red
 
 
 ############################################
