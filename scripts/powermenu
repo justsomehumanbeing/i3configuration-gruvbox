@@ -32,10 +32,10 @@
 #LOCKSCRIPT="i3lock-extra -m pixelize"
 
 # Colors: FG (foreground), BG (background), HL (highlighted)
-FG_COLOR="#bbbbbb"
-BG_COLOR="#111111"
-HLFG_COLOR="#111111"
-HLBG_COLOR="#bbbbbb"
+FG_COLOR="#282828"
+BG_COLOR="#fbf1c7"
+HLFG_COLOR="#282828"
+HLBG_COLOR="#fbf1c7"
 BORDER_COLOR="#222222"
 
 # Options not related to colors (most rofi options do not work anymore)
