@@ -401,6 +401,14 @@ set $brightgreen	#66ff00
 #GRUVBOX:
 set $dark0_hard		#1d2021
 set $dark0			#282828
+set $dark0_soft		#32302f
+set $dark1			#3c3836
+set $dark2			#504945
+set $dark3			#665c54
+set $dark4			#7c6f64
+
+set $gray_245		#928374
+set $gray_244		#928374
 
 set $light0			#fbf1c7
 set $light1			#ebdbb2
