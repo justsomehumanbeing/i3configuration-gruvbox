@@ -472,14 +472,14 @@ strip_workspace_numbers yes
 ##strip_workspace_name no
 
 	colors{
-		separator          	$purple
-		background         	$darkgrey
-		statusline         	$white
+		separator          	$bright_purple
+		background         	$dark0
+		statusline         	$light0
 		#                   border 		        bg			txt			indicator
-		focused_workspace	$green		  		$grey		$darkgrey	$purple
-		active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
-		inactive_workspace	$darkgrey   		$darkgrey	$grey		$purple
-		urgent_workspace	$urgentred	    	$urgentred	$white		$purple 
+		focused_workspace	$light1				$light1		$dark0		$light1
+		active_workspace	$light4		      	$light4		$dark0		$light4
+		inactive_workspace	$light4				$light4 	$dark0		$light4
+		urgent_workspace	$bright_red			$bright_red	$light0		$bright_red
 	}
 }
 
