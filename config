@@ -442,9 +442,9 @@ set $faded_orange	#af3a03
 
 # define colors for windows:
 #class		        		border			bground		text			indicator		child_border
-client.focused		    	$isipink		$dark0		$light0 		$isipink		$isipink
-client.unfocused	    	$dark0			$dark0		$light4			$dark0			$dark0
-client.focused_inactive		$dark0			$dark0		$light4			$purple			$dark0
+client.focused		    	$dark2			$dark2		$light1 		$dark2			$isipink
+client.unfocused	    	$dark1			$dark1		$light4			$dark1			$dark0
+client.focused_inactive		$dark1			$dark1		$light4			$dark1			$dark0
 client.urgent		    	$bright_red		$bright_red	$light0			$bright_red		$bright_red
 
 
