@@ -26,6 +26,9 @@ set $term alacritty
 workspace_layout default
 #workspace_layout tabbed
 
+#hide the border if one window uses the full screen
+hide_edge_borders smart 
+
 ##############################
 # extra options for windows: #
 ##############################
